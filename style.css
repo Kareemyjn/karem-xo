@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #333; /* dark background */
+    color: #fff; /* white text */
+}
+
+.game-container {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #444; /* dark border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #444; /* dark background */
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.cell {
+    background-color: #555; /* dark cell background */
+    padding: 20px;
+    border: 1px solid #444; /* dark border */
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #666; /* dark hover effect */
+}
+
+.game-info {
+    margin-top: 20px;
+}
+
+#game-message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* white text */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666; /* dark button background */
+    color: #fff; /* white text */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777; /* dark hover effect */
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff; /* white text */
+}
+
+h1 {
+    color: #fff; /* white text */
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .game-container {
+        max-width: 250px;
+    }
+    .cell {
+        padding: 15px;
+    }
+}
